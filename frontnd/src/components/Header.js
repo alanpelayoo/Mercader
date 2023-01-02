@@ -14,12 +14,13 @@ function Header() {
   const logoutHandler = () => {
     dispatch(logout());
   }
+  
   return (
     <header >
       <Navbar bg="primary" expand="lg" variant='dark' collapseOnSelect className='py-2'>
         <Container>
           <LinkContainer to='/'>
-            <Image src='/images/logo-h.png' alt='logo' className='logoimg'/>
+            <Image src='https://proshop-bucketap.s3.amazonaws.com/logo-h.png' alt='logo' className='logoimg'/>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -53,8 +54,6 @@ function Header() {
                   </LinkContainer>
                 </NavDropdown> 
               )}
-              
-              
             </Nav>
           </Navbar.Collapse>
         </Container>
