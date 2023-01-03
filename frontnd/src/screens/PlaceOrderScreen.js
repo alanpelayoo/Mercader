@@ -143,6 +143,9 @@ function PlaceOrderScreen() {
                     </Card>
                 </Col>
             </Row>
+            <div className='mt-3'>
+                    <Message variant='info ' clas>Important Note: This is only test a website, you won´t receive real products</Message>
+            </div>
         </Container>
     )
 }

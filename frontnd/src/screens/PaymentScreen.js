@@ -5,6 +5,7 @@ import FormContainer from '../components/FormContainer';
 import { useDispatch, useSelector } from 'react-redux';
 import { savePaymentMethod } from '../actions/cartActions'
 import  CheckOutSteps  from '../components/CheckOutSteps'
+import  Message  from '../components/Message'
 
 function PaymentScreen() {
     const navigate = useNavigate();
@@ -45,10 +46,13 @@ function PaymentScreen() {
                         </Form.Check>
                     </Col>   
                 </Form.Group>
-
                 <Button type='submit' variant='primary' className='mt-3'>
                     Continue
                 </Button>
+
+                <div className='mt-3'>
+                    <Message variant='info ' clas>Important Note: This is only test a website, you won´t receive real products</Message>
+                </div>
             </Form>
         </FormContainer>
     )

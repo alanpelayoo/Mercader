@@ -194,6 +194,12 @@ function OrderScreen() {
                                     <Message variant='success'>Thanks for your purchase <i class="fa-regular fa-money-bill-1"></i></Message>
                                 </ListGroup.Item>
                             ):null}
+                            <div className='mt-3 p-1' >
+                                <Message variant='info ' clas>
+                                    Important Note: This is only test a website, you won´t receive real products.
+                                    You can open paypal window but please don´t complete purchase.
+                                </Message>
+                            </div>
                         </ListGroup>
                         {loadingDeliver && <Loader/>}
                         {userInfo && userInfo.isAdmin && order.isPaid && !order.isDelivered && (
@@ -209,6 +215,7 @@ function OrderScreen() {
                         )}
                     </Card>
                 </Col>
+                
             </Row>
         </Container>
     )

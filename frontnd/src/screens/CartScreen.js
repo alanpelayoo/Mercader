@@ -51,15 +51,15 @@ function CartScreen() {
                       { <Image src={item.image} alt={item.name} fluid rounded/> /* fluid makes it responsive */}
                     </Col>
 
-                    <Col md={3}>
+                    <Col md={3} className='my-1 mt-md-0'>
                       <Link to={`/product/${item.product}`}> {item.name}</Link>
                     </Col>
 
-                    <Col md={2}>
+                    <Col md={2} className='my-1 mt-md-0'>
                       ${item.price}
                     </Col>
 
-                    <Col md={3}>
+                    <Col md={3} className='my-1 mt-md-0'>
                       <Form.Select
                         value={item.qty} 
                         onChange={(e) => dispatch(addToCart(item.product, Number(e.target.value))) }
@@ -74,7 +74,7 @@ function CartScreen() {
                       </Form.Select>
                     </Col>
 
-                    <Col md={1}>
+                    <Col md={1} className='my-1 mt-md-0'>
                       <Button
                         type='button'
                         variant='light'
